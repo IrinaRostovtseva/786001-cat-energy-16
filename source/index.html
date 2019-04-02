@@ -6,23 +6,23 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo header__logo" href="#">
-        <img class="logo__img" src="img/logo.svg" alt="логотип Cat energy" >
+      <a class="logo page-header__logo" href="#">
+        <img class="page-header__logo-img" src="img/logo.svg" alt="логотип Cat energy" >
       </a>
-      <nav class="site-nav header__site-nav">
-        <ul class="site-nav__list menu">
-          <li class="menu__item">
+      <nav class="site-nav page-header__site-nav">
+        <ul class="page-header__nav-list menu">
+          <li class="page-header__menu-item">
             <a href="#">Главная</a>
           </li>
-          <li class="menu__item">
+          <li class="page-header__menu-item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="menu__item">
+          <li class="page-header__menu-item">
             <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
-      <button class="burger-btn header__burger-btn" type="button" aria-label="Кнопка открыть меню"></button>
+      <button class="page-header__burger-btn burger-btn" type="button" aria-label="Кнопка открыть меню"></button>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Cat energy</h1>
@@ -35,31 +35,31 @@
       <section class="nutrition-programs">
         <h2 class="visually-hidden">Программы питания для котов</h2>
         <ul class="program-list nutrition-programs__list">
-          <li class="program-list__item program-item">
-            <h3 class="program-item__title">Похудение</h3>
-            <p class="program-item__info">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program-item__btn" href="#" >Каталог Slim</a>
+          <li class="nutrition-programs__item program-item">
+            <h3 class="nutrition-programs__item-title">Похудение</h3>
+            <p class="nutrition-programs__item-info">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="nutrition-programs__btn" href="#" >Каталог Slim</a>
           </li>
-          <li class="program-list__item">
-            <h3 class="program-item__title">Набор массы</h3>
-            <p class="program-item__info">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="program-item__btn" href="#" >Каталог Pro</a>
+          <li class="nutrition-programs__item program-item">
+            <h3 class="nutrition-programs__item-title">Набор массы</h3>
+            <p class="nutrition-programs__item-info">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="nutrition-programs__btn" href="#" >Каталог Pro</a>
           </li>
         </ul>
       </section>
       <section class="usage">
         <h2 class="usage__title section-title">Как это работает</h2>
         <ul class="usage__list process-list">
-          <li class="process-list__item">
+          <li class="usage__item">
             Функциональноне питание содержит только полезные питательные вещества.
           </li>
-          <li class="process-list__item">
+          <li class="usage__item">
             Выпускаются в виде порошка, который нужно лишь залить кипятком и готово.
           </li>
-          <li class="process-list__item">
+          <li class="usage__item">
             Замените один-два приема обычной еды на наше функциональное питание.
           </li>
-          <li class="process-list__item">
+          <li class="usage__item">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </li>
         </ul>
@@ -68,30 +68,26 @@
         <h2 class="example__title section-title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <dl class="example__data data">
-          <dt class="data__description">Снижение веса</dt>
-          <dd class="data-value">5 кг</dd>
+          <dt class="example__data-description">Снижение веса</dt>
+          <dd class="example__data-value">5 кг</dd>
         </dl>
         <dl class="example__data data">
-          <dt class="data__description">Затрачено времени</dt>
-          <dd class="data-value">60 дней</dd>
+          <dt class="example__data-description">Затрачено времени</dt>
+          <dd class="example__data-value">60 дней</dd>
         </dl>
-        <b class="example__sum">Затраты на питание:15 000 руб.</b>
+        <b class="example__sum">Затраты на питание: 15 000 руб.</b>
         <figure class="example__photo slider">
-          <ul class="slides-list">
-            <li class="slides-list__item slide">
-              <img class="slide__img" src="img/Boris-before.jpg" alt="кот Борис до похудения">
+          <ul class="example__slides-list">
+            <li class="example__slide-item slide">
+              <img class="example__slide-img" src="img/Boris-before.jpg" alt="кот Борис до похудения">
             </li>
-            <li class="slides-list__item">
-              <img class="slide__img" src="img/Boris-after.jpg" alt="кот Борис после похудения">
+            <li class="example__slide-item slide">
+              <img class="example__slide-img" src="img/Boris-after.jpg" alt="кот Борис после похудения">
             </li>
           </ul>
-          <div class="slider__controls controls">
-            <input class="visually-hidden" id="cat-before" type="radio" name="progress">
-            <label class="controls__label" for="cat-before">Было</label>
-            <span class="controls__radio-btn btn-before"></span>
-            <input class="visually-hidden" id="cat-after" type="radio" name="progress">
-            <label class="controls__label" for="cat-before">Стало</label>
-            <span class="controls__radio-btn btn-after"></span>
+          <div class="example__slider-controls controls">
+            <buttons class="example__slider-btn" type="button">Было</buttons>
+            <buttons class="example__slider-btn" type="button">Стало</buttons>
           </div>
         </figure>
       </section>
@@ -102,21 +98,21 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="footer__logo" href="#">
+      <a class="page-footer__logo" href="#">
         <img src="img/footer-logo.svg" alt="Логотип Cat Energy">
       </a>
-      <ul class="footer__social-list social-buttons">
-        <li class="social-buttons__item">
-          <a class="social-btn" href="#" aria-label="мы ВКонтакте">VK</a>
+      <ul class="page-footer__social-list social-buttons">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-btn" href="#" aria-label="мы ВКонтакте">VK</a>
         </li>
-        <li class="social-buttons__item">
-          <a class="social-btn" href="#" aria-label="мы в Instagram">Instagram</a>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-btn" href="#" aria-label="мы в Instagram">Instagram</a>
         </li>
-        <li class="social-buttons__item">
-          <a class="social-btn" href="#" aria-label="мы в Facebook">Facebook</a>
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-btn" href="#" aria-label="мы в Facebook">Facebook</a>
         </li>
       </ul>
-      <div class="footer__copyright">
+      <div class="page-footer__copyright">
         <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
