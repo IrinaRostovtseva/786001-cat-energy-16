@@ -15,8 +15,7 @@
             <a href="index.html">Главная</a>
           </li>
           <li class="page-header__menu-item">
-            <a href="ca
-            ">Каталог продукции</a>
+            <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="page-header__menu-item">
             <a>Подбор программы</a>
@@ -26,7 +25,91 @@
       <button class="page-header__burger-btn burger-btn" type="button" aria-label="Кнопка открыть меню"></button>
     </header>
     <main class="page main">
-
+      <h1 class="visually-hidden">Подбор программы питания Cat Energy</h1>
+      <section class="program-selection">
+        <h2 class="program-selection__title">Подбор программы</h2>
+        <form class="program-selection__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="program-selection__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <fieldset class="program-selection__cat-info cat-info">
+            <legend class="program-selection__fieldset-title visually-hidden">Информация о Ваше коте</legend>
+            <label class="program-selection__input-label">
+              Имя:<sup class="program-selection__required-field">*</sup>
+              <input class="program-selection__text-field" type="text" name="cats-name" placeholder="Барсик">
+            </label>
+            <label class="program-selection__input-label" >
+              Вес (кг):<sup class="program-selection__required-field">*</sup>
+              <input class="program-selection__text-field" type="number" name="cats-weight" placeholder="7">
+            </label>
+            <label class="program-selection__input-label">
+              Возраст (лет):
+              <input class="program-selection__text-field" type="number" name="cats-age" placeholder="7">
+            </label>
+          </fieldset>
+          <fieldset class="program-selection__program-type program-type">
+            <legend class="program-selection__fieldset-title visually-hidden">Тип программы питания</legend>
+            <label class="program-selection__input-label">
+              <input class="visually-hidden" type="radio" name="program-type" value="loosing-weight" checked>
+              <span class="program-selection__radio-btn"></span>
+              Похудение
+            </label>
+            <label class="program-selection__input-label">
+              <input class="visually-hidden" type="radio" name="program-type" value="gaining-weight">
+              <span class="program-selection__radio-btn"></span>
+              Набор массы
+            </label>
+            <label class="program-selection__input-label">
+              <input class="visually-hidden" type="radio" name="program-type" value="need-advice">
+              <span class="program-selection__radio-btn"></span>
+              Не знаю (нужен совет)
+            </label>
+          </fieldset>
+          <fieldset class="program-selection__owner-data">
+            <legend class="program-selection__fieldset-title">Контактные данные (владельца кота)</legend>
+            <label class="program-selection__input-label">
+              E-mail:<sup class="program-selection__required-field">*</sup>
+              <input class="program-selection__text-field" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+            </label>
+            <label class="program-selection__input-label">
+              Телефон:<sup class="program-selection__required-field">*</sup>
+              <input class="program-selection__text-field" id="phone-field" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
+            </label>
+          </fieldset>
+          <fieldset class="program-selection__comment-field comment-field">
+            <legend class="program-selection__fieldset-title">Комментарий</legend>
+            <textarea class="program-selection__comment-field" name="comment-field" rows="5" placeholder="Расскажите о всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="program-selection__extra-field">
+            <legend class="program-selection__fieldset-title"></legend>
+            <label class="program-selection__input-label">
+              <input class="visually-hidden" type="checkbox" name="sweetener" checked>
+              <span class="program-selection__checkbox"></span>
+              Сахарозаменитель
+            </label>
+            <label class="program-selection__input-label">
+              <input class="visually-hidden" type="checkbox" name="water">
+              <span class="program-selection__checkbox"></span>
+              Питьевая вода
+            </label>
+            <label class="program-selection__input-label">
+              <input class="visually-hidden" type="checkbox" name="milk">
+              <span class="program-selection__checkbox"></span>
+              Молоко
+            </label>
+            <label class="program-selection__input-label">
+              <input class="visually-hidden" type="checkbox" name="vitamins">
+              <span class="program-selection__checkbox"></span>
+              Витамины
+            </label>
+          </fieldset>
+          <button class="program-selection__btn btn" type="submit">Отправить заявку</button>
+          <p><sup class="program-selection__required-field">*</sup> - Обязательные поля</p>
+        </form>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Приглашаем к сотруднечеству дилеров!</h2>
+        <p class="contacts__info">ул. Большая Конюшенная, д. 19/8, Санкт-Петербург</p>
+        <img class="contacts__map" src="img/map.jpg" alt="Санкт-Петербург, ул. Большая Конюшенная 19/8">
+      </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
