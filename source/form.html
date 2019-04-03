@@ -26,7 +26,39 @@
       <button class="page-header__burger-btn burger-btn" type="button" aria-label="Кнопка открыть меню"></button>
     </header>
     <main class="page main">
-
+      <h1 class="visually-hidden">Подбор программы питания Cat Energy</h1>
+      <section class="program-selection">
+        <h2 class="program-selection__title">Подбор программы</h2>
+        <form class="program-selection__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="program-selection__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <fieldset class="program-selection__cat-info cat-info">
+            <legend class="program-selection__fieldset-title visually-hidden">Информация о Ваше коте</legend>
+            <label class="program-selection__input-label" for="name-field">Имя:<sup class="program-selection__required-field">*</sup></label>
+            <input class="program-selection__text-field" id="name-field" type="text" name="cats-name" placeholder="Барсик">
+            <label class="program-selection__input-label" for="weight-field">Вес (кг):<sup class="program-selection__required-field">*</sup></label>
+            <input class="program-selection__text-field" id="weight-field" type="number" name="cats-weight" placeholder="7">
+            <label class="program-selection__input-label" for="age-field">Возраст (лет):</label>
+            <input class="program-selection__text-field" id="age-field" type="number" name="cats-age" placeholder="7">
+          </fieldset>
+          <fieldset class="program-selection__program-type program-type">
+            <legend class="program-selection__fieldset-title visually-hidden">Тип программы питания</legend>
+            <input class="visually-hidden" id="loosing-weight" type="radio" name="program-type" value="loosing-weight" checked>
+            <label class="program-selection__input-label" for="loosing-weight">Похудение</label>
+            <span class="program-selection__radio-btn"></span>
+            <input class="visually-hidden" id="gainig-weight" type="radio" name="program-type" value="gaining-weight">
+            <label class="program-selection__input-label" for="gainig-weight">Набор массы</label>
+            <span class="program-selection__radio-btn"></span>
+            <input class="visually-hidden" id="need-advice" type="radio" name="program-type" value="need-advice">
+            <label class="program-selection__input-label" for="need-advice">Не знаю (нужен совет)</label>
+            <span class="program-selection__radio-btn"></span>
+          </fieldset>
+        </form>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Приглашаем к сотруднечеству дилеров!</h2>
+        <p class="contacts__info">ул. Большая Конюшенная, д. 19/8, Санкт-Петербург</p>
+        <img class="contacts__map" src="img/map.jpg" alt="Санкт-Петербург, ул. Большая Конюшенная 19/8">
+      </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
