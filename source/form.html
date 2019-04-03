@@ -52,6 +52,34 @@
             <label class="program-selection__input-label" for="need-advice">Не знаю (нужен совет)</label>
             <span class="program-selection__radio-btn"></span>
           </fieldset>
+          <fieldset class="program-selection__owner-data">
+            <legend class="program-selection__fieldset-title">Контактные данные (владельца кота)</legend>
+            <label class="program-selection__input-label" for="email-field">E-mail:<sup class="program-selection__required-field">*</sup></label>
+            <input class="program-selection__text-field" id="email-field" type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+            <label class="program-selection__input-label" for="phone-field">Телефон:<sup class="program-selection__required-field">*</sup></label>
+            <input class="program-selection__text-field" id="phone-field" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
+          </fieldset>
+          <fieldset class="program-selection__comment-field comment-field">
+            <legend class="program-selection__fieldset-title">Комментарий</legend>
+            <textarea class="program-selection__comment-field" name="comment-field" rows="5" placeholder="Расскажите о всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="program-selection__extra-field">
+            <legend class="program-selection__fieldset-title"></legend>
+            <input class="visually-hidden" id="sweetener" type="checkbox" name="sweetener" checked>
+            <label class="program-selection__input-label" for="sweetener">Сахарозаменитель</label>
+            <span class="program-selection__checkbox"></span>
+            <input class="visually-hidden" id="water" type="checkbox" name="water">
+            <label class="program-selection__input-label" for="water">Питьевая вода</label>
+            <span class="program-selection__checkbox"></span>
+            <input class="visually-hidden" id="milk" type="checkbox" name="milk">
+            <label class="program-selection__input-label" for="milk">Молоко</label>
+            <span class="program-selection__checkbox"></span>
+            <input class="visually-hidden" id="vitamins" type="checkbox" name="vitamins">
+            <label class="program-selection__input-label" for="vitamins">Витамины</label>
+            <span class="program-selection__checkbox"></span>
+          </fieldset>
+          <button class="program-selection__btn btn" type="submit">Отправить заявку</button>
+          <p><sup class="program-selection__required-field">*</sup> - Обязательные поля</p>
         </form>
       </section>
       <section class="contacts">
