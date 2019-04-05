@@ -1,17 +1,36 @@
 @import "variables.less";
-@import "visually-hidden";
+@import "page-header.less";
+@import "menu.less";
+@import "burger-btn.less";
+@import "visually-hidden.less";
+@import "promo.less";
+@import "btn.less";
+@import "nutrition-programs.less";
+@import "usage.less";
+@import "section-title.less";
+@import "contacts.less";
+@import "page-footer.less";
+@import "catalog.less";
 
-
+//шрифты
 @font-face {
-  font-family: "Oswald";
+  font-family: "Oswald-reg";
   src: url("../fonts/oswaldregular.woff"),
        url("../fonts/oswaldregular.woff2");
   font-weight: 400;
 }
+@font-face {
+  font-family: "Oswald-med";
+  src: url("../fonts/oswaldmedium.woff"),
+       url("../fonts/oswaldmedium.woff2");
+  font-weight: medium;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @main-text-color;
+  text-align: left;
   background-color: #ffffff;
 }
