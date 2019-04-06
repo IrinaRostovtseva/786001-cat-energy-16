@@ -25,13 +25,13 @@
       </nav>
       <button class="page-header__burger-btn burger-btn" type="button" aria-label="Кнопка открыть меню"></button>
     </header>
-    <main class="page main">
+    <main class="page-main">
       <h1 class="visually-hidden">Подбор программы питания Cat Energy</h1>
       <section class="program-selection">
         <h2 class="program-selection__title section-title">Подбор программы</h2>
         <form class="program-selection__form" action="https://echo.htmlacademy.ru" method="post">
           <p class="program-selection__intro">Заполните анкету и мы подберем программу питания для вашего кота</p>
-          <fieldset class="program-selection__cat-info cat-info">
+          <fieldset class="program-selection__cat-info">
             <legend class="program-selection__fieldset-title visually-hidden">Информация о Ваше коте</legend>
             <label class="program-selection__input-label">
               Имя:<sup class="program-selection__required-field">*</sup>
@@ -46,7 +46,7 @@
               <input class="program-selection__text-field" type="number" name="cats-age" placeholder="7">
             </label>
           </fieldset>
-          <fieldset class="program-selection__program-type program-type">
+          <fieldset class="program-selection__program-type">
             <legend class="program-selection__fieldset-title visually-hidden">Тип программы питания</legend>
             <label class="program-selection__input-label">
               <input class="visually-hidden" type="radio" name="program-type" value="loosing-weight" checked>
@@ -75,7 +75,7 @@
               <input class="program-selection__text-field" id="phone-field" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90">
             </label>
           </fieldset>
-          <fieldset class="program-selection__comment-field comment-field">
+          <fieldset class="program-selection__comment">
             <legend class="program-selection__fieldset-title">Комментарий</legend>
             <textarea class="program-selection__comment-field" name="comment-field" rows="5" placeholder="Расскажите о всех повадках кота"></textarea>
           </fieldset>
@@ -103,7 +103,7 @@
             </label>
           </fieldset>
           <button class="program-selection__btn btn" type="submit">Отправить заявку</button>
-          <p><sup class="program-selection__required-field">*</sup> - Обязательные поля</p>
+          <p class="program-selection__footnote"><sup class="program-selection__required-field">*</sup> - Обязательные поля</p>
         </form>
       </section>
       <section class="contacts contacts--grey">
