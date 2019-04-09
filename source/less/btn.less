@@ -1,4 +1,5 @@
 .btn {
+  display: block;
   padding: 11px;
   border: none;
   font-family: "Oswald-reg", "Arial", sans-serif;
@@ -33,5 +34,13 @@
   &:active {
     color: rgba(@main-text-color, 0.3);
     background-color: #ebebeb;
+  }
+}
+
+@media (min-width: @tablet-screen) {
+  .btn {
+    padding: 16px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
