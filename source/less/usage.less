@@ -1,20 +1,33 @@
+.usage__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .usage__title {
   margin: 0;
   margin-bottom: 23px;
 }
 
 .usage__list {
+  width: 100%;
   margin: 0;
+  margin-bottom: 42px;
   padding: 0;
   list-style: none;
 }
 
 .usage__item {
+  position: relative;
+  width: 100%;
   margin-bottom: 20px;
   padding-left: 80px;
+  box-sizing: border-box;
 }
 
 .usage__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   width: 60px;
   height: 60px;
@@ -37,4 +50,67 @@
   &--clock {
     background-image: url("../img/advantage-clock@1x.png");
   }
+}
+
+.usage__item-text {
+  position: relative;
+  z-index: 5;
+  margin: 0;
+}
+
+@media (min-width: @tablet-screen) {
+  .usage {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  .usage__wrapper {
+    width: 710px;
+  }
+  
+  .usage__title {
+    margin-bottom: 65px;
+  }
+  
+  .usage__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    min-height: 545px;
+    margin-bottom: 35px;
+    counter-reset: item-count;
+  }
+  
+  .usage__item {
+    width: 235px;
+    min-height: 230px;
+    margin-right: 80px;
+    padding: 0;
+    padding-top: 115px;
+  }
+  
+  .usage__icon {
+    width: 80px;
+    height: 80px;
+  } 
+}
+
+@media (min-width: @desktop-screen) {
+  .usage {
+    margin-bottom: 35px;
+    border-bottom: none;
+  }
+  
+  .usage__wrapper {
+    width: 1220px;
+  }
+  
+  .usage__list {
+    min-height: auto;
+  }
+  
+  .usage__item {
+    width: 245px;
+    margin-right: 0;
+  } 
 }
