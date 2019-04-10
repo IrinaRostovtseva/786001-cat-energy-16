@@ -96,7 +96,7 @@
     }
   }
 }
-
+  
 @media (min-width: @desktop-screen) {
   .page-header__wrapper {
     width: 1220px;
@@ -115,8 +115,9 @@
     width: 480px;
   }
   
-  .page-header__menu-link {
+  .page-header__menu-link--white {
     color: @secondary-text-color;
+    border-bottom-color: @secondary-text-color;
     
     &:hover,
     &:focus {
@@ -125,10 +126,6 @@
 
     &:active {
       color: rgba(@secondary-text-color, 0.3);
-    }
-    
-    &--current {
-      border-bottom-color: currentColor;
     }
   }
 }
