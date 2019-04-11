@@ -2,28 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="logo page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="img/logo.svg" alt="логотип Cat energy" >
-      </a>
-      <nav class="site-nav page-header__site-nav">
-        <ul class="page-header__nav-list menu">
-          <li class="page-header__menu-item">
-            <a class="page-header__menu-link" href="index.html">Главная</a>
-          </li>
-          <li class="page-header__menu-item">
-            <a class="page-header__menu-link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="page-header__menu-item">
-            <a class="page-header__menu-link">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="page-header__burger-btn burger-btn" type="button" aria-label="Кнопка открыть меню"></button>
+      <div class="page-header__wrapper">
+        <div class="page-header__top-header">
+          <a class="logo page-header__logo" href="index.html">
+            <img class="page-header__logo-img" src="img/logo.svg" alt="логотип Cat energy">
+          </a>
+          <button class="page-header__burger-btn burger-btn" type="button" aria-label="Кнопка открыть меню">
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+          </button>
+        </div>
+        <nav class="site-nav page-header__site-nav">
+          <ul class="page-header__nav-list menu">
+            <li class="page-header__menu-item">
+              <a class="page-header__menu-link" href="index.html">Главная</a>
+            </li>
+            <li class="page-header__menu-item">
+              <a class="page-header__menu-link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="page-header__menu-item">
+              <a class="page-header__menu-link page-header__menu-link--current">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Подбор программы питания Cat Energy</h1>
@@ -113,22 +122,24 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html">
-        <img src="img/footer-logo.svg" alt="Логотип Cat Energy">
-      </a>
-      <ul class="page-footer__social-list social-buttons">
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-btn" href="#" aria-label="мы ВКонтакте">VK</a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-btn" href="#" aria-label="мы в Instagram">Instagram</a>
-        </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-btn" href="#" aria-label="мы в Facebook">Facebook</a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright">
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-img" src="img/footer-logo.svg" alt="Логотип Cat Energy">
+        </a>
+        <ul class="page-footer__social-list social-buttons">
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-btn" href="#" aria-label="мы ВКонтакте">VK</a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-btn" href="#" aria-label="мы в Instagram">Ins</a>
+          </li>
+          <li class="page-footer__social-item">
+            <a class="page-footer__social-btn" href="#" aria-label="мы в Facebook">FB</a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
   </body>

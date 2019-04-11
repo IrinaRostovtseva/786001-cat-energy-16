@@ -1,5 +1,20 @@
 .page-header {
   background-color: #ffffff;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-header__top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 20px;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -9,6 +24,7 @@
 }
 
 .page-header__nav-list {
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -17,9 +33,12 @@
 .page-header__menu-item {
   border-bottom: 1px solid #e6e6e6;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .page-header__menu-link {
+  display: block;
+  padding: 23px 20px 22px;
   color: @heading-color;
   text-decoration: none;
 
@@ -30,5 +49,83 @@
 
   &:active {
     color: rgba(@heading-color, 0.3);
+  }
+}
+
+@media (min-width: @tablet-screen) {
+  .page-header {
+    padding-top: 24px;
+  }
+
+  .page-header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 710px;
+  }
+
+  .page-header__top-header {
+    border-bottom: none;
+  }
+
+  .page-header__logo-img {
+    width: 158px;
+    height: auto;
+  }
+
+  .page-header__burger-btn {
+    display: none;
+  }
+
+  .page-header__nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  .page-header__menu-item {
+    padding: 0;
+    border: none;
+  }
+
+  .page-header__menu-link {
+    padding: 10px 0;
+
+    &--current {
+      border-bottom: 2px solid @main-color;
+    }
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .page-header__wrapper {
+    width: 1220px;
+  }
+
+  .page-header {
+    padding-top: 54px;
+    background-color: transparent;
+  }
+
+  .page-header__logo-img {
+    width: 202px;
+  }
+
+  .page-header__nav-list {
+    width: 480px;
+  }
+
+  .page-header__menu-link--white {
+    color: @secondary-text-color;
+    border-bottom-color: @secondary-text-color;
+
+    &:hover,
+    &:focus {
+      color: rgba(@secondary-text-color, 0.6);
+    }
+
+    &:active {
+      color: rgba(@secondary-text-color, 0.3);
+    }
   }
 }
