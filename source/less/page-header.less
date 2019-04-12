@@ -42,12 +42,12 @@
   color: @heading-color;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     color: rgba(@heading-color, 0.6);
   }
 
-  &:active {
+  &[href]:active {
     color: rgba(@heading-color, 0.3);
   }
 }
