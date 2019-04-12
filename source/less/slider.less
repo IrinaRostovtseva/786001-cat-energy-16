@@ -36,6 +36,21 @@
   background-color: transparent;
 }
 
+@media (min-width: @tablet-screen) {
+  .slider__btn {
+    padding: 4px 0;
+    border-bottom: 1px dotted #bebebe;
+
+    &:hover {
+      border-bottom: 1px solid #989898;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}
+
 @media (min-width: @desktop-screen) {
   .slider__img {
     width: 100%;
