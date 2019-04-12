@@ -1,0 +1,44 @@
+.slider__wrapper {
+  width: 100%;
+}
+
+.slider__list {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__item {
+  display: none;
+  width: 100%;
+
+  &--current {
+    display: block;
+  }
+}
+
+.slider__img {
+  display: block;
+  width: 282px;
+  height: 233px;
+  margin: 0 auto;
+}
+
+.slider__btn {
+  border: none;
+  font-family: "Oswald-reg", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @heading-color;
+  background-color: transparent;
+}
+
+@media (min-width: @desktop-screen) {
+  .slider__img {
+    width: 100%;
+    height: 515px;
+  }
+}
