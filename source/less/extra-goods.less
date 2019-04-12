@@ -1,28 +1,31 @@
+.extra-goods__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .extra-goods__title {
-  margin: 0;
   margin-bottom: 30px;
   font-family: "Oswald-reg", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: @heading-color;
+  background-color: #ffffff;
 }
 
 .extra-goods__list {
   margin: 0;
   padding: 0;
+  padding-bottom: 40px;
   list-style: none;
   border-top: 1px solid #cdcdcd;
 }
 
 .extra-goods__item {
+  display: flex;
+  flex-direction: column;
   padding: 14px 0 17px;
   border-bottom: 1px solid #cdcdcd;
-}
-
-.extra-goods__info {
-  font-size: 14px;
-  line-height: 14px;
 }
 
 .extra-goods__item-title {
@@ -36,6 +39,122 @@
   color: #222222;
 }
 
+.extra-goods__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
 .extra-goods__price {
   margin: 0;
+}
+
+.extra-goods__stock {
+  margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-screen) {
+  .extra-goods {
+    border-top: 3px solid @main-color;
+  }
+
+  .extra-goods__wrapper {
+    width: 710px;
+  }
+
+  .extra-goods__title {
+    position: relative;
+    top: -50px;
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .extra-goods__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 100%;
+    margin-top: -1px;
+    padding: 30px 40px;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+  }
+
+  .extra-goods__item-title {
+    margin-right: auto;
+    margin-bottom: 28px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .extra-goods__info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra-goods__price {
+    margin-left: 53px;
+  }
+
+  .extra-goods__btn {
+    padding: 12px;
+    width: 634px;
+    font-size: 16px;
+  }
+
+  .extra-goods__stock {
+    margin-bottom: 78px;
+  }
+}
+
+@media (min-width: @desktop-screen) {
+  .extra-goods {
+    padding-bottom: 85px;
+  }
+
+  .extra-goods__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    width: 1220px;
+  }
+
+  .extra-goods__list {
+    margin-right: auto;
+    padding: 0;
+    padding-left: 42px;
+    border: none;
+  }
+
+  .extra-goods__item {
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 896px;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra-goods__item-title {
+    margin-bottom: 0;
+  }
+
+  .extra-goods__info {
+    width: 287px;
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .extra-goods__btn {
+    width: 245px;
+  }
+
+  .extra-goods__stock {
+    width: 245px;
+  }
 }
