@@ -1,5 +1,9 @@
 .contacts {
   line-height: 20px;
+
+  &--grey {
+    background-color: @secondary-color;
+  }
 }
 
 .contacts__info {
@@ -7,12 +11,8 @@
   justify-content: space-between;
   width: 100%;
   padding: 25px 20px;
-  background-color: #ffffff;
+  background-color: transparent;
   box-sizing: border-box;
-
-  &--grey {
-    background-color: @secondary-color;
-  }
 }
 
 .contacts__title {
@@ -43,8 +43,13 @@
 
 
 @media (min-width: @tablet-screen) {
+  .contacts__info-wrapper {
+    width: 632px;
+    margin: 0 auto;
+  }
+
   .contacts__info {
-    padding: 64px 70px;
+    padding: 64px 0;
   }
 
   .contacts__title {
@@ -63,15 +68,17 @@
 }
 
 @media (min-width: @desktop-screen) {
-  .contacts {
+  .contacts__info-wrapper {
     position: relative;
     z-index: 1;
+    width: 1220px;
+    height: 100%;
   }
 
   .contacts__info {
     position: absolute;
     top: 95px;
-    left: 8%;
+    left: 0;
     z-index: 5;
     width: 570px;
     padding-left: 78px;
