@@ -17,6 +17,7 @@
 }
 
 .page-footer__logo-img {
+  display: block;
   width: 128px;
   height: 24px;
 }
@@ -38,11 +39,10 @@
   height: 32px;
 }
 
-.page-footer__copyright {
-  padding: 22px 0;
-}
-
 .page-footer__copyright-link {
+  display: block;
+  width: 100%;
+  padding: 30px 0;
   font-size: 16px;
   line-height: 16px;
   color: @main-text-color;
@@ -68,10 +68,20 @@
 
   .page-footer__logo,
   .page-footer__social-list {
+    padding: 0;
     border-bottom: none;
   }
 
-  .page-footer__copyright {
+  .page-footer__logo {
+    width: 132px;
+  }
+
+  .page-footer__social-list {
+    justify-content: space-between;
+    width: 140px;
+  }
+
+  .page-footer__copyright-link {
     flex-shrink: 0;
     width: 164px;
     padding: 0;

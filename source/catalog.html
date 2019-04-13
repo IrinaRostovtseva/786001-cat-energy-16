@@ -196,51 +196,62 @@
         </div>
       </section>
       <section class="extra-goods">
-        <h2 class="extra-goods__title">Дополнительные товары</h2>
-        <ul class="extra-goods__list">
-          <li class="extra-goods__item">
-            <h3 class="extra-goods__item-title">Сахарозаменитель</h3>
-            <dl class="extra-goods__info">
-              <dt class="extra-goods__volume">1 упаковка (100 г)</dt>
-              <dd class="extra-goods__price">200 Р.</dd>
-            </dl>
-            <a class="extra-goods__btn btn" href="#">Заказать</a>
-          </li>
-          <li class="extra-goods__item">
-            <h3 class="extra-goods__item-title">Питьевая вода</h3>
-            <dl class="extra-goods__info">
-              <dt class="extra-goods__volume">5 литров</dt>
-              <dd class="extra-goods__price">50 Р.</dd>
-            </dl>
-            <a class="extra-goods__btn btn"  href="#">Заказать</a>
-          </li>
-          <li class="extra-goods__item">
-            <h3 class="extra-goods__item-title">Молоко</h3>
-            <dl class="extra-goods__info">
-              <dt class="extra-goods__volume">1 литр</dt>
-              <dd class="extra-goods__price">100 Р.</dd>
-            </dl>
-            <a class="extra-goods__btn btn" href="#">Заказать</a>
-          </li>
-          <li class="extra-goods__item">
-            <h3 class="extra-goods__item-title">Витамины</h3>
-            <dl class="extra-goods__info">
-              <dt class="extra-goods__volume">1 упаковка (30 г)</dt>
-              <dd class="extra-goods__price">300 Р.</dd>
-            </dl>
-            <a class="extra-goods__btn btn" href="#">Заказать</a>
-          </li>
-        </ul>
-      </section>
-      <section class="stock">
-        <div class="stock__container">
-          <h2 class="visually-hidden">Акция</h2>
-          <p class="stock__info">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="extra-goods__wrapper">
+          <h2 class="extra-goods__title">Дополнительные товары</h2>
+          <ul class="extra-goods__list">
+            <li class="extra-goods__item">
+              <h3 class="extra-goods__item-title">Сахарозаменитель</h3>
+              <dl class="extra-goods__info">
+                <dt class="extra-goods__volume">1 упаковка (100 г)</dt>
+                <dd class="extra-goods__price">200 Р.</dd>
+              </dl>
+              <a class="extra-goods__btn btn" href="#">Заказать</a>
+            </li>
+            <li class="extra-goods__item">
+              <h3 class="extra-goods__item-title">Питьевая вода</h3>
+              <dl class="extra-goods__info">
+                <dt class="extra-goods__volume">5 литров</dt>
+                <dd class="extra-goods__price">50 Р.</dd>
+              </dl>
+              <a class="extra-goods__btn btn"  href="#">Заказать</a>
+            </li>
+            <li class="extra-goods__item">
+              <h3 class="extra-goods__item-title">Молоко</h3>
+              <dl class="extra-goods__info">
+                <dt class="extra-goods__volume">1 литр</dt>
+                <dd class="extra-goods__price">100 Р.</dd>
+              </dl>
+              <a class="extra-goods__btn btn" href="#">Заказать</a>
+            </li>
+            <li class="extra-goods__item">
+              <h3 class="extra-goods__item-title">Витамины</h3>
+              <dl class="extra-goods__info">
+                <dt class="extra-goods__volume">1 упаковка (30 г)</dt>
+                <dd class="extra-goods__price">300 Р.</dd>
+              </dl>
+              <a class="extra-goods__btn btn" href="#">Заказать</a>
+            </li>
+          </ul>
+          <div class="extra-goods__stock stock">
+            <div class="stock__wrapper">
+              <div class="stock__container">
+                <h2 class="visually-hidden">Акция</h2>
+                <span class="stock__gift-icon"></span>
+                <p class="stock__info">Закажите все<br> и получите чехол для кота в подарок!</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="contacts contacts--grey">
-        <h2 class="contacts__title">Приглашаем к сотруднечеству дилеров!</h2>
-        <p class="contacts__info">ул. Большая Конюшенная, д. 19/8, Санкт-Петербург</p>
+        <div class="contacts__info-wrapper">
+          <div class="contacts__info">
+            <h2 class="contacts__title">Приглашаем<br> к сотруднечеству дилеров!</h2>
+            <p class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span></p>
+          </div>
+        </div>
         <img class="contacts__map" src="img/map.jpg" alt="Санкт-Петербург, ул. Большая Конюшенная 19/8">
       </section>
     </main>
@@ -260,9 +271,7 @@
             <a class="page-footer__social-btn" href="#" aria-label="мы в Facebook">FB</a>
           </li>
         </ul>
-        <div class="page-footer__copyright">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>

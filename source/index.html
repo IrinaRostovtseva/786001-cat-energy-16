@@ -89,35 +89,45 @@
         </div>
       </section>
       <section class="example">
-        <h2 class="example__title section-title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="example__data data">
-          <dt class="example__data-description">Снижение веса</dt>
-          <dd class="example__data-value">5 кг</dd>
-        </dl>
-        <dl class="example__data data">
-          <dt class="example__data-description">Затрачено времени</dt>
-          <dd class="example__data-value">60 дней</dd>
-        </dl>
-        <b class="example__sum">Затраты на питание: 15 000 руб.</b>
-        <figure class="example__photo slider">
-          <ul class="example__slides-list">
-            <li class="example__slide-item slide">
-              <img class="example__slide-img" src="img/Boris-before.jpg" alt="кот Борис до похудения">
-            </li>
-            <li class="example__slide-item slide">
-              <img class="example__slide-img" src="img/Boris-after.jpg" alt="кот Борис после похудения">
-            </li>
-          </ul>
-          <div class="example__slider-controls controls">
-            <button class="example__slider-btn" type="button">Было</button>
-            <button class="example__slider-btn" type="button">Стало</button>
+        <div class="example__wrapper">
+          <div class="example__info">
+            <h2 class="example__title section-title">Живой пример</h2>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <dl class="example__data data">
+              <dt class="example__data-description">Снижение веса</dt>
+              <dd class="example__data-value">5 кг</dd>
+            </dl>
+            <dl class="example__data data">
+              <dt class="example__data-description">Затрачено времени</dt>
+              <dd class="example__data-value">60 дней</dd>
+            </dl>
+            <b class="example__sum">Затраты на питание: 15 000 руб.</b>
           </div>
-        </figure>
+          <figure class="example__photo slider">
+            <ul class="slider__list">
+              <li class="slider__item slider__item--current">
+                <img class="slider__img" src="img/Boris-before.jpg" alt="кот Борис до похудения">
+              </li>
+              <li class="slider__item">
+                <img class="slider__img" src="img/Boris-after.jpg" alt="кот Борис после похудения">
+              </li>
+            </ul>
+            <div class="slider__controls">
+              <button class="slider__btn slider__btn--before" type="button">Было</button>
+              <button class="slider__btn slider__btn--after" type="button">Стало</button>
+            </div>
+          </figure>
+        </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Приглашаем к сотруднечеству дилеров!</h2>
-        <p class="contacts__info">ул. Большая Конюшенная, д. 19/8, Санкт-Петербург</p>
+        <div class="contacts__info-wrapper">
+          <div class="contacts__info">
+            <h2 class="contacts__title">Приглашаем<br> к сотруднечеству дилеров!</h2>
+            <p class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span></p>
+          </div>
+        </div>
         <img class="contacts__map" src="img/map.jpg" alt="Санкт-Петербург, ул. Большая Конюшенная 19/8">
       </section>
     </main>
@@ -137,9 +147,7 @@
             <a class="page-footer__social-btn" href="#" aria-label="мы в Facebook">FB</a>
           </li>
         </ul>
-        <div class="page-footer__copyright">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>
