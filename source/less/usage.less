@@ -87,6 +87,21 @@
     margin-right: 80px;
     padding: 0;
     padding-top: 115px;
+
+    &::before {
+      counter-increment: item-count;
+      content: counter(item-count);
+      position: absolute;
+      top: -40px;
+      right: 10px;
+      z-index: 1;
+      width: auto;
+      height: 281px;
+      font-family: "Oswald-reg", "Arial", sans-serif;
+      font-size: 281px;
+      line-height: 281px;
+      color: #f2f2f2;
+    }
   }
 
   .usage__icon {
