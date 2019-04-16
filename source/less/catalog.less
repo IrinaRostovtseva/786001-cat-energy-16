@@ -1,5 +1,5 @@
 .catalog {
-  padding: 20px 0 25px;
+  padding: 13px 0 10px;
 }
 
 .catalog__wrapper {
@@ -9,8 +9,7 @@
 
 .catalog__title {
   margin: 0;
-  padding: 20px;
-  padding-top: 0;
+  padding: 0 20px 28px;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -22,14 +21,19 @@
 }
 
 .catalog__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  min-height: 210px;
-  padding: 0 20px 24px;
+  min-height: 208px;
+  padding: 0 20px 25px;
   border-bottom: 1px solid #e6e6e6;
   box-sizing: border-box;
+}
+
+.catalog__item picture {
+  display: none;
 }
 
 .catalog__product-photo {
@@ -40,8 +44,9 @@
 .catalog__product-description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 140px;
+  padding: 21px 0;
 }
 
 .catalog__product-description a {
@@ -51,7 +56,7 @@
 .catalog__product-title {
   width: 85px;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 13px;
   font-family: "Oswald-reg", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -62,15 +67,19 @@
 
 .catalog__product-info {
   width: 140px;
+  margin: 0;
+  border-collapse: collapse;
   font-size: 12px;
   line-height: 16px;
 }
 
 .catalog__product-argument {
+  padding: 0;
   text-align: left;
 }
 
 .catalog__product-value {
+  padding: 0;
   text-align: right;
 }
 
@@ -92,11 +101,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 83px;
+    top: 40px;
     left: 50%;
-    width: 60px;
+    width: 30px;
     height: 2px;
-    margin-left: -30px;
+    margin-left: -15px;
     background-color: #e8e8e8;
   }
 
@@ -126,13 +135,17 @@
 }
 
 @media (min-width: @tablet-screen) {
+  .catalog {
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
+
   .catalog__wrapper {
     width: 710px;
   }
 
   .catalog__title {
     padding: 0;
-    margin-top: 65px;
     margin-bottom: 75px;
     border-bottom: none;
   }
@@ -143,7 +156,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: @tablet-screen;
-    padding-top: 83px;
+    padding-top: 90px;
     margin: 0 -29px -83px;
   }
 
@@ -154,10 +167,10 @@
     justify-content: space-between;
     align-items: center;
     width: 326px;
-    min-height: 433px;
-    padding: 164px 37px 40px;
+    min-height: 430px;
+    padding: 162px 37px 40px;
     margin: 0 29px;
-    margin-bottom: 143px;
+    margin-bottom: 140px;
     border-bottom: none;
     background-color: @secondary-color;
   }
@@ -179,6 +192,7 @@
 
   .catalog__product-description {
     width: 100%;
+    padding: 0;
   }
 
   .catalog__product-title {
@@ -193,7 +207,6 @@
     width: 252px;
     margin-bottom: 34px;
     font-size: 16px;
-    border-collapse: collapse;
   }
 
   .catalog__product-argument,
@@ -205,31 +218,52 @@
   .catalog__product-btn {
     padding: 10px;
     width: 250px;
+    font-size: 16px;
   }
 
   .catalog__all-products {
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 326px;
     min-height: 433px;
-    padding: 160px 37px 40px;
+    padding: 165px 37px 40px;
     margin: 0 29px;
     border: 1px solid #cdcdcd;
+
+    &::after,
+    &::before {
+      width: 60px;
+      top: 83px;
+      margin-left: -30px;
+    }
   }
 
   .catalog__more-goods-title {
+    width: 140px;
+    margin: 0 auto;
+    margin-bottom: 25px;
     font-size: 20px;
   }
 
   .catalog__more-goods-description {
+    width: 190px;
+    margin: 0 auto;
+    margin-bottom: auto;
     font-size: 16px;
+    line-height: 20px;
   }
 
   .catalog__more-goods-btn {
     padding: 10px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: @desktop-screen) {
+  .catalog {
+    padding-top: 65px;
+    padding-bottom: 17px;
+  }
+
   .catalog__wrapper {
     width: 1220px;
   }
@@ -240,7 +274,7 @@
   }
 
   .catalog__item {
-    width: 250px;
+    width: 245px;
     min-height: 435px;
     margin-right: 40px;
     margin-left: 40px;
@@ -261,7 +295,7 @@
   }
 
   .catalog__all-products {
-    width: 250px;
+    width: 245px;
     min-height: 435px;
     margin-right: 40px;
     margin-left: 40px;
@@ -276,6 +310,7 @@
   }
 
   .catalog__more-goods-description {
+    width: 100%;
     margin-bottom: auto;
   }
 }
