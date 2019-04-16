@@ -5,7 +5,7 @@
 
 .usage__title {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
 }
 
 .usage__list {
@@ -19,7 +19,7 @@
 .usage__item {
   position: relative;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   padding-left: 80px;
   box-sizing: border-box;
 }
@@ -68,7 +68,7 @@
   }
 
   .usage__title {
-    margin-bottom: 65px;
+    margin-bottom: 70px;
   }
 
   .usage__list {
@@ -77,13 +77,14 @@
     justify-content: space-between;
     align-content: space-between;
     min-height: 545px;
-    margin-bottom: 35px;
+    margin-bottom: 60px;
     counter-reset: item-count;
   }
 
   .usage__item {
-    width: 235px;
+    width: 245px;
     min-height: 230px;
+    margin: 0;
     margin-right: 80px;
     padding: 0;
     padding-top: 115px;
@@ -93,7 +94,7 @@
       content: counter(item-count);
       position: absolute;
       top: -40px;
-      right: 10px;
+      right: 0;
       z-index: 1;
       width: auto;
       height: 281px;
@@ -112,7 +113,7 @@
 
 @media (min-width: @desktop-screen) {
   .usage {
-    margin-bottom: 35px;
+    margin-bottom: 0;
     border-bottom: none;
   }
 
@@ -122,6 +123,7 @@
 
   .usage__list {
     min-height: auto;
+    margin: 0;
   }
 
   .usage__item {

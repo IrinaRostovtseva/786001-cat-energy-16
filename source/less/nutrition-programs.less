@@ -11,15 +11,15 @@
 
 .nutrition-programs__item {
   position: relative;
-  margin-bottom: 20px;
-  padding: 33px 20px 23px;
+  margin-bottom: 15px;
+  padding: 33px 20px 18px;
   background-color: @secondary-color;
   box-sizing: border-box;
 
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
+    top: 26px;
     left: 23px;
     z-index: 1;
     width: 50px;
@@ -44,7 +44,7 @@
   &:nth-of-type(2) .nutrition-programs__item-title::before {
     content: "";
     position: absolute;
-    top: 35px;
+    top: 38px;
     left: 13px;
     z-index: 2;
     width: 67px;
@@ -70,7 +70,7 @@
 .nutrition-programs__item-info {
   margin: 0;
   margin-bottom: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 21px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -87,8 +87,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 44%;
-    right: 16px;
+    top: 43%;
+    right: 30px;
     width: 17px;
     height: 3px;
     background-color: #3e4242;
@@ -98,8 +98,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 30%;
-    right: 10px;
+    top: 23%;
+    right: 24px;
     width: 0;
     height: 0;
     border: 6px solid #3e4242;
@@ -136,7 +136,7 @@
   .nutrition-programs__item {
     width: 100%;
     margin-bottom: 30px;
-    padding: 82px 300px 65px 55px;
+    padding: 75px 280px 55px 55px;
 
     &::after {
       top: 92px;
@@ -159,6 +159,10 @@
       height: 112px;
     }
   }
+
+  .nutrition-programs__item:nth-of-type(2) {
+    padding-right: 311px;
+  }
 }
 
 @media (min-width: @tablet-screen) {
@@ -168,21 +172,33 @@
 
   .nutrition-programs__list {
     width: 100%;
+    padding-bottom: 20px;
   }
 
   .nutrition-programs__item-title {
+    margin-bottom: 25px;
     padding: 0;
     font-size: 36px;
   }
 
   .nutrition-programs__item-info {
-    margin-bottom: 60px;
+    margin-bottom: 35px;
     border-bottom: none;
   }
 
   .nutrition-programs__btn {
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      top: 14px;
+      right: 16px;
+    }
+
+    &::after {
+      top: 9px;
+      right: 12px;
+    }
   }
 }
 
@@ -195,12 +211,12 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .nutrition-programs__item {
     width: 570px;
-    padding: 80px 53px 63px;
+    padding: 75px 53px 55px;
 
     &::after {
       top: 46px;
@@ -225,11 +241,12 @@
   }
 
   .nutrition-programs__item-title {
-    margin-bottom: 80px;
+    margin-bottom: 75px;
     padding-left: 160px;
   }
 
   .nutrition-programs__item-info {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    padding: 0;
   }
 }
