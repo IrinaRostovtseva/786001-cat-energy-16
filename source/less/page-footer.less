@@ -95,7 +95,7 @@
 @media (min-width: @tablet-screen) {
   .page-footer {
     display: flex;
-    min-height: 150px;
+    min-height: 140px;
   }
 
   .page-footer__wrapper {
@@ -112,7 +112,13 @@
   }
 
   .page-footer__social-btn {
-    margin: 0 13px;
+    width: 34px;
+    height: 34px;
+    margin: 0 9px;
+  }
+
+  .page-footer__social-btn svg {
+    transform: scale(1.35);
   }
 
   .page-footer__logo {
@@ -128,6 +134,10 @@
     flex-shrink: 0;
     width: 162px;
     padding: 0;
+  }
+
+  .page-footer__copyright-link svg {
+    transform: scale(1.5);
   }
 }
 

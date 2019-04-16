@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
+  height: 67px;
   padding: 0 20px;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -30,42 +30,6 @@
 .page-header__logo-img {
   width: 192px;
   height: 40px;
-}
-
-.page-header__site-nav {
-  margin-top: -44px;
-  background-color: transparent;
-
-  &--closed .burger-btn__line {
-  box-shadow: 0 6px 0 #000000,
-              0 -6px 0 #000000;
-  }
-
-  &--closed .page-header__nav-list {
-    display: none;
-  }
-
-  &--opened .burger-btn__line {
-  transform: rotate(45deg);
-  box-shadow: none;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 2px;
-    background-color: #000000;
-    transform: rotate(-90deg);
-  }
-
-  &--opened .page-header__nav-list {
-    display: block;
-  }
-}
-
-  &--no-js .burger-btn {
-  display: none;
-  }
 }
 
 .page-header__nav-list {
@@ -101,6 +65,44 @@
   }
 }
 
+@media (max-width: @tablet-screen - 1px) {
+  .page-header__site-nav {
+    margin-top: -44px;
+    background-color: transparent;
+
+    &--closed .burger-btn__line {
+      box-shadow: 0 6px 0 #000000,
+                0 -6px 0 #000000;
+    }
+
+    &--closed .page-header__nav-list {
+      display: none;
+    }
+
+    &--opened .burger-btn__line {
+    transform: rotate(45deg);
+    box-shadow: none;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: #000000;
+      transform: rotate(-90deg);
+    }
+
+    &--opened .page-header__nav-list {
+      display: block;
+    }
+  }
+
+    &--no-js .burger-btn {
+    display: none;
+    }
+  }
+}
+
 @media (min-width: @tablet-screen) {
   .page-header {
     padding-top: 24px;
@@ -114,11 +116,12 @@
   }
 
   .page-header__top-header {
+    padding: 0;
     border-bottom: none;
   }
 
   .page-header__logo-img {
-    width: 158px;
+    width: 173px;
     height: auto;
   }
 
@@ -139,7 +142,7 @@
   }
 
   .page-header__menu-link {
-    padding: 10px 0;
+    padding: 5px 0 6px;
 
     &--current {
       border-bottom: 2px solid @main-color;
@@ -163,6 +166,11 @@
 
   .page-header__nav-list {
     width: 480px;
+  }
+
+  .page-header__menu-link {
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .page-header__menu-link--white {
