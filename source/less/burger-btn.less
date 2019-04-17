@@ -1,11 +1,21 @@
 .burger-btn {
+  display: block;
   width: 24px;
-  height: 20px;
+  height: 18px;
   padding: 0;
   background-color: #ffffff;
   border: none;
 }
 
 .burger-btn__line {
+  display: block;
+  width: 24px;
+  height: 2px;
   background-color: #000000;
+}
+
+@media (min-width: @tablet-screen) {
+  .burger-btn {
+    display: none;
+  }
 }
