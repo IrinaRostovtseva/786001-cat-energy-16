@@ -42,6 +42,7 @@
 }
 
 .program-selection__input-label {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -75,16 +76,32 @@
 
   &:active,
   &:focus {
-    border: 2px solid @main-text-color;
+    outline: 2px solid @main-text-color;
+  }
+
+  &:active ~ svg path,
+    &:focus ~ svg path {
+    fill: @main-color;
   }
 
   &:invalid {
-    border: 2px solid #ff8282;
+    outline: 2px solid @error-color;
+  }
+
+  &:invalid ~ svg path {
+    fill: @error-color;
   }
 
   &::placeholder {
     color: @main-text-color;
   }
+}
+
+.program-selection__input-label svg {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
 }
 
 .program-selection__cat-info {
@@ -97,10 +114,53 @@
 
 .program-selection__program-type {
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 27px 0;
   margin-bottom: 32px;
   border: none;
   border-bottom: 1px solid #ededed;
+  box-sizing: border-box;
+}
+
+.program-selection__program-type .program-selection__input-label,
+.program-selection__extra-field .program-selection__input-label {
+  z-index: 5;
+  padding-left: 47px;
+  box-sizing: border-box;
+}
+
+.program-selection__radio-btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  transform: translateY(-50%);
+}
+
+input[type="radio"]:checked ~ .program-selection__radio-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: @main-color;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+}
+
+input[type="radio"]:hover ~ .program-selection__radio-btn,
+input[type="checkbox"]:hover ~ .program-selection__checkbox {
+  border-color: #bababa;
+}
+
+.program-selection__program-type .program-selection__input-label:active,
+.program-selection__extra-field .program-selection__input-label:active {
+  opacity: 0.3;
 }
 
 .program-selection__owner-data {
@@ -145,6 +205,30 @@
   margin-bottom: 34px;
   padding: 0;
   border: none;
+}
+
+.program-selection__checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  transform: translateY(-50%);
+}
+
+input[type="checkbox"]:checked ~ .program-selection__checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-50%, -50%);
 }
 
 .program-selection__btn {
