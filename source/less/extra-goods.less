@@ -1,14 +1,24 @@
+.extra-goods {
+  border-top: 3px solid @main-color;
+}
+
 .extra-goods__wrapper {
   width: 280px;
   margin: 0 auto;
 }
 
 .extra-goods__title {
+  position: relative;
+  top: -37px;
+  left: -20px;
+  display: inline-block;
   margin-bottom: 30px;
+  padding: 0 20px;
   font-family: "Oswald-reg", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  vertical-align: middle;
   color: @heading-color;
   background-color: #ffffff;
 }
@@ -56,18 +66,13 @@
 }
 
 @media (min-width: @tablet-screen) {
-  .extra-goods {
-    border-top: 3px solid @main-color;
-  }
-
   .extra-goods__wrapper {
     width: 710px;
   }
 
   .extra-goods__title {
-    position: relative;
     top: -25px;
-    display: inline-block;
+    left: 0;
     margin: 0;
     margin-bottom: 55px;
     padding: 0 40px;
