@@ -1,5 +1,5 @@
 .example {
-  padding: 22px 0 36px;
+  padding: 15px 0 36px;
   background-color: @secondary-color;
 }
 
@@ -82,18 +82,9 @@
   color: @heading-color;
 }
 
-.example__photo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 @media (min-width: @tablet-screen) {
   .example {
-    padding-top: 40px;
+    padding: 40px 0 70px;
     background-color: #ffffff;
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 58%, #eaeaea 58%, #eaeaea 100%);
   }
@@ -116,7 +107,7 @@
 
   .example__data {
     width: 165px;
-    padding: 12px;
+    padding: 13px;
     margin-right: 40px;
   }
 
@@ -137,19 +128,19 @@
   .example__sum {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-self: baseline;
     margin: 0;
     margin-left: auto;
     width: 176px;
+    min-height: 70px;
     font-size: 20px;
     text-align: right;
   }
 
   .example__photo {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     width: 650px;
+    margin: 0 auto;
   }
 }
 
@@ -157,17 +148,20 @@
   .example {
     padding-top: 10px;
     padding-bottom: 20px;
-    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #eaeaea 30%, #eaeaea 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 33%, #eaeaea 33%, #eaeaea 100%);
   }
 
   .example__wrapper {
-    width: 1220px;
+    width: 1300px;
+    padding-left: 40px;
+    box-sizing: border-box;
   }
 
   .example__info {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 434px;
+    margin-bottom: 0;
   }
 
   .example__title {
@@ -194,8 +188,14 @@
   .example__sum {
     flex-direction: row;
     justify-content: space-between;
-    width: 370px;
+    width: 325px;
     margin: 0;
     text-align: left;
+  }
+
+  .example__photo {
+    align-self: flex-start;
+    width: 690px;
+    margin: 0;
   }
 }
