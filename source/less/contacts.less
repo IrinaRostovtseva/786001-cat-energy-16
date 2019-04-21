@@ -1,5 +1,23 @@
 .contacts {
+  position: relative;
+  z-index: 1;
   line-height: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    bottom: 170px;
+    z-index: 5;
+    width: 55px;
+    height: 53px;
+    background-color: transparent;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateX(50%);
+  }
 
   &--grey {
     background-color: @secondary-color;
@@ -43,6 +61,12 @@
 
 
 @media (min-width: @tablet-screen) {
+  .contacts::before {
+    bottom: 150px;
+    width: 113px;
+    height: 106px;
+  }
+
   .contacts__info-wrapper {
     width: 632px;
     margin: 0 auto;
@@ -70,8 +94,10 @@
 }
 
 @media (min-width: @desktop-screen) {
-  .contacts {
-    position: relative;
+  .contacts::before {
+    bottom: 50%;
+    right: 325px;
+    transform: translate(0, 50%);
   }
 
   .contacts__info-wrapper {
@@ -85,7 +111,7 @@
 
   .contacts__info {
     position: absolute;
-    top: 95px;
+    top: 100px;
     left: 0;
     z-index: 5;
     width: 570px;
