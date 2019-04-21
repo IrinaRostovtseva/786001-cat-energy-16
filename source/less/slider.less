@@ -1,4 +1,4 @@
-.slider__wrapper {
+.slider {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +8,7 @@
 }
 
 .slider__list {
+  position: relative;
   width: 100%;
   margin: 0;
   margin-bottom: 35px;
@@ -17,7 +18,6 @@
 
 .slider__item {
   display: none;
-  width: 100%;
 
   &--current {
     display: block;
@@ -86,8 +86,23 @@
     margin-bottom: 20px;
   }
 
+  .slider__item {
+    position: relative;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+
+    &--current {
+      position: absolute;
+      z-index: 5;
+      width: 50%;
+      overflow: hidden;
+    }
+  }
+
   .slider__img {
-    width: 680px;
+    width: 690px;
     height: auto;
     margin: 0 auto;
   }
@@ -156,6 +171,7 @@
 
 @media (min-width: @desktop-screen) {
   .slider {
+    width: 650px;
     padding-top: 20px;
   }
 
@@ -165,10 +181,6 @@
 
   .slider__img {
     left: 0;
-    max-width: 100%;
-  }
-
-  .slider__controls {
-    margin-left: 80px;
+    width: 650px;
   }
 }
