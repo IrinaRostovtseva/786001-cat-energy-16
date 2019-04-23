@@ -28,7 +28,7 @@
     background-color: @main-color;
   }
 
-  &:nth-of-type(1) .nutrition-programs__item-title::before {
+  &--slim::before {
     content: "";
     position: absolute;
     top: 21px;
@@ -41,7 +41,7 @@
     background-position: center;
   }
 
-  &:nth-of-type(2) .nutrition-programs__item-title::before {
+  &--fatten::before {
     content: "";
     position: absolute;
     top: 38px;
@@ -148,23 +148,23 @@
       height: 200px;
     }
 
-    &:nth-of-type(1) .nutrition-programs__item-title::before {
+    &--slim::before {
       top: 78px;
       left: 476px;
       width: 140px;
       height: 194px;
     }
 
-    &:nth-of-type(2) .nutrition-programs__item-title::before {
+    &--fatten {
+      padding-right: 311px;
+    }
+
+    &--fatten::before {
       top: 135px;
       left: 412px;
       width: 268px;
       height: 112px;
     }
-  }
-
-  .nutrition-programs__item:nth-of-type(2) {
-    padding-right: 311px;
   }
 }
 
@@ -226,14 +226,14 @@
       height: 102px;
     }
 
-    &:nth-of-type(1) .nutrition-programs__item-title::before {
+    &--slim::before {
       top: 41px;
       left: 66px;
       width: 70px;
       height: 97px;
     }
 
-    &:nth-of-type(2) .nutrition-programs__item-title::before {
+    &--fatten::before {
       top: 69px;
       left: 34px;
       width: 134px;
