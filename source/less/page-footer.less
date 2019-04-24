@@ -53,16 +53,17 @@
   width: 22px;
   height: 22px;
   margin: 0 17px;
+  fill: #666666;
 
-  &:hover path,
-  &:hover circle,
-  &:focus path,
-  &:focus circle {
+  &:hover,
+  &:hover,
+  &:focus,
+  &:focus {
     fill: @main-color;
   }
 
-  &:active path,
-  &:active circle {
+  &:active,
+  &:active {
     fill: rgba(@main-color, 0.3);
   }
 }
@@ -77,17 +78,15 @@
   line-height: 16px;
   color: @main-text-color;
   text-decoration: none;
+  fill: #666666;
 
-  &:hover path,
-  &:focus path {
+  &:hover,
+  &:focus {
     fill: @main-color;
   }
 
   &:active {
     color: rgba(@main-text-color, 0.3);
-  }
-
-  &:active path {
     fill: rgba(@main-color, 0.3);
   }
 }
@@ -126,18 +125,13 @@
   }
 
   .page-footer__social-list {
-    justify-content: space-between;
-    width: 140px;
+    min-width: 140px;
   }
 
   .page-footer__copyright-link {
     flex-shrink: 0;
     width: 162px;
     padding: 0;
-  }
-
-  .page-footer__copyright-link svg {
-    transform: scale(1.5);
   }
 }
 

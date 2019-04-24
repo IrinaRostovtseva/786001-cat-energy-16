@@ -16,8 +16,7 @@
 
 .promo__text {
   width: 100%;
-  min-height: 247px;
-  padding: 29px 20px;
+  padding: 29px 20px 140px;
   color: @secondary-text-color;
   background-color: @main-color;
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -83,7 +82,6 @@
 
   .promo__text {
     width: 425px;
-    min-height: auto;
     padding: 0;
     text-align: left;
     color: @heading-color;
@@ -118,6 +116,7 @@
     margin-top: -120px;
     margin-bottom: 80px;
     padding-top: 220px;
+    padding-bottom: 190px;
     background-image:
       url("../img/index-can-desktop@1x.png"),
       url("../img/index-background-desktop@1x.jpg");
@@ -130,6 +129,8 @@
     background-size:
       552px 499px,
       50%;
+    box-sizing: border-box;
+
 
     @media (min-resolution: @dpi-res), (min-resolution: @dppx-res) {
       background-image:
