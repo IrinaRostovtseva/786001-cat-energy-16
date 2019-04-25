@@ -80,7 +80,7 @@
 @media (min-width: @tablet-screen) {
   .slider__list {
     min-height: 505px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .slider__item {
@@ -101,6 +101,7 @@
 
   .slider__img {
     position: relative;
+    left: 20px;
     width: 690px;
     height: auto;
     margin: 0 auto;
@@ -111,7 +112,7 @@
   }
 
   .slider__item:not(.slider__item--current) .slider__img {
-    left: -100%;
+    left: -95%;
   }
 
   .slider__btn {
@@ -178,16 +179,34 @@
 
 @media (min-width: @desktop-screen) {
   .slider {
-    width: 650px;
-    padding-top: 20px;
+    width: 690px;
+    margin-top: -30px;
   }
 
   .slider__list {
-    margin-bottom: 42px;
+    min-height: 530px;
+    margin-bottom: 20px;
+  }
+
+  .slider__item:not(.slider__item--current) {
+    width: 47%;
+  }
+
+  .slider__item:not(.slider__item--current) .slider__img {
+    left: -103%;
+  }
+
+  .slider__item--current {
+    width: 53%;
   }
 
   .slider__img {
     left: 0;
     width: 650px;
+    height: 509px;
+  }
+
+  .slider__controls {
+    margin-left: 40px;
   }
 }
