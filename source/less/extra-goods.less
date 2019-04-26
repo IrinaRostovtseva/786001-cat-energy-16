@@ -31,8 +31,10 @@
 .extra-goods__item {
   display: flex;
   flex-direction: column;
-  padding: 14px 0;
+  min-height: 129px;
+  padding: 12px 0;
   border-bottom: 1px solid #cdcdcd;
+  box-sizing: border-box;
 }
 
 .extra-goods__item-title {
@@ -49,7 +51,7 @@
 .extra-goods__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   font-size: 14px;
   line-height: 14px;
 }
@@ -59,7 +61,7 @@
 }
 
 .extra-goods__stock {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: @tablet-screen) {
@@ -147,6 +149,7 @@
     flex-wrap: nowrap;
     align-items: baseline;
     width: 896px;
+    min-height: auto;
     padding: 15px 0 16px;
     border-left: none;
     border-right: none;
