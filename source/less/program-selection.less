@@ -56,7 +56,7 @@
   text-align: left;
   color: #222222;
   box-sizing: border-box;
-  fill: @heading-color;
+  fill: #222222;
 }
 
 .program-selection__required-field {
@@ -84,6 +84,7 @@
   &:active,
   &:focus {
     outline: 2px solid @main-text-color;
+    outline-offset: -1px;
   }
 
   &:active ~ svg,
@@ -93,6 +94,7 @@
 
   &:invalid {
     outline: 2px solid @error-color;
+    outline-offset: -1px;
   }
 
   &:invalid ~ svg {
@@ -209,7 +211,8 @@ input[type="checkbox"]:hover ~ .program-selection__checkbox {
 
   &:active,
   &:focus {
-    border: 2px solid @main-text-color;
+    outline: 2px solid @main-text-color;
+    outline-offset: -1px;
   }
 }
 
